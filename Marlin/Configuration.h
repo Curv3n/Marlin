@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // E3D V6
-  #define DEFAULT_Kp 16.2
-  #define DEFAULT_Ki 1.16
-  #define DEFAULT_Kd 57
+  #define DEFAULT_Kp 22.09
+  #define DEFAULT_Ki 4.33
+  #define DEFAULT_Kd 28.16
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -534,9 +534,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   //24v HB (make fine tuning)
-  #define DEFAULT_bedKp 126.13
-  #define DEFAULT_bedKi 4.30
-  #define DEFAULT_bedKd 924.76
+  #define DEFAULT_bedKp 63.41
+  #define DEFAULT_bedKi 12.67
+  #define DEFAULT_bedKd 211.56
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
