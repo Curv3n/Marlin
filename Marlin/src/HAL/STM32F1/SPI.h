@@ -126,7 +126,6 @@ private:
     bitOrder = inBitOrder;
     dataMode = inDataMode;
     dataSize = inDataSize;
-    //state    = SPI_STATE_IDLE;
   }
   uint32_t clock;
   uint32_t dataSize;
@@ -188,11 +187,11 @@ public:
    */
   void end();
 
-  void beginTransaction(const SPISettings &settings) { beginTransaction(BOARD_SPI_DEFAULT_SS, settings); }
-  void beginTransaction(uint8_t pin, const SPISettings &settings);
+  void beginTransaction(SPISettings settings) { beginTransaction(BOARD_SPI_DEFAULT_SS, settings); }
+  void beginTransaction(uint8_t pin, SPISettings settings);
   void endTransaction();
 
-  void beginTransactionSlave(const SPISettings &settings);
+  void beginTransactionSlave(SPISettings settings);
 
   void setClockDivider(uint32_t clockDivider);
   void setBitOrder(BitOrder bitOrder);
@@ -207,8 +206,6 @@ public:
    * Requires an added function spi_data_size on STM32F1 / cores / maple / libmaple / spi.c
    */
   void setDataSize(uint32_t ds);
-
-  uint32_t getDataSize() { return _currentSetting->dataSize; }
 
   /* Victor Perez 2017. Added to set and clear callback functions for callback
    * on DMA transfer completion.
