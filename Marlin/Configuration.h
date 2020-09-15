@@ -145,7 +145,11 @@
 #define EXTRUDERS 1
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
+<<<<<<< HEAD
 #define DEFAULT_NOMINAL_FILAMENT_DIA 2.85
+=======
+#define DEFAULT_NOMINAL_FILAMENT_DIA 3.0
+>>>>>>> parent of cd1877f7e... Merge remote-tracking branch 'upstream/2.0.x' into 2.0.x
 
 // For Cyclops or any "multi-extruder" that shares a single nozzle.
 //#define SINGLENOZZLE
@@ -833,7 +837,11 @@
  *
  * Enable this option for a probe connected to the Z Min endstop pin.
  */
+<<<<<<< HEAD
 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+=======
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+>>>>>>> parent of cd1877f7e... Merge remote-tracking branch 'upstream/2.0.x' into 2.0.x
 
 /**
  * Z_MIN_PROBE_PIN
@@ -1603,7 +1611,11 @@
  *
  * View the current statistics with M78.
  */
+<<<<<<< HEAD
 #define PRINTCOUNTER
+=======
+//#define PRINTCOUNTER
+>>>>>>> parent of cd1877f7e... Merge remote-tracking branch 'upstream/2.0.x' into 2.0.x
 
 //=============================================================================
 //============================= LCD and SD support ============================
