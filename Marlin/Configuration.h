@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // E3D V6
-  #define DEFAULT_Kp 22.09
-  #define DEFAULT_Ki 4.33
-  #define DEFAULT_Kd 28.16
+  #define DEFAULT_Kp 14
+  #define DEFAULT_Ki 2
+  #define DEFAULT_Kd 25
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
